@@ -1,0 +1,19 @@
+GET http://localhost:3009/
+
+###
+PATCH http://localhost:3009/api/to_do_list_db/1
+Content-Type: application/JSON
+{'due_by': 'June 1, 2023'}
+
+###
+GET http://localhost:3009/api/to_do_list_db/
+
+###
+GET http://localhost:3009/api/to_do_list_db/1
+
+###
+POST http://localhost:3009/api/to_do_list_db/
+
+
+###
+DELETE http://localhost:3009/api/to_do_list_db/1
